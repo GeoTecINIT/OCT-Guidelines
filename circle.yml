@@ -17,8 +17,6 @@ dependencies:
     - npm install
 test:
   override:
-    - meteor npm run lint --silent
-    - meteor test --once --driver-package dispatch:mocha-phantomjs
     - meteor run:
         background: true
 
