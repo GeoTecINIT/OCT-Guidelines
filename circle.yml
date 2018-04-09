@@ -13,7 +13,6 @@ dependencies:
     - rm google-chrome.deb
   override:
     - curl https://install.meteor.com | /bin/sh
-    - npm install -g chimp
     - meteor npm install --save bcrypt
     - npm install
 test:
@@ -22,8 +21,7 @@ test:
     - meteor test --once --driver-package dispatch:mocha-phantomjs
     - meteor run:
         background: true
-    - sleep 60
-    - meteor npm run chimp-test
+
 checkout:
   post:
     - git submodule update --init

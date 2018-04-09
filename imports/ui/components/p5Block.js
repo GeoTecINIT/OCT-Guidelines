@@ -96,6 +96,7 @@ class p5Block extends Block {
 
   renderViewerMode() {
 
+
     const {block, hasBeenRun, result, editable} = this.props;
 
     let buttons = this.getButtons();
